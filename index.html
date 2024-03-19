@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Mixer</title>
+<style>
+  #red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 10px;
+  }
+
+  #yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+  }
+  #green {
+    width: 100px;
+    height: 100px;
+    background-color:green;
+  }
+
+  #result {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id ="red"onclick="mixColor('red')"></div>
+<div id="yellow" onclick="mixColor('yellow')"></div>
+<div id="green" onclick="mixColor('green')"></div>
+<div id="result"></div>
+
+<script>
+function mixColor(color) {
+  var resultDiv = document.getElementById("result");
+  if (color === "red") {
+    resultDiv.style.backgroundColor = "red";
+  } else if (color === "yellow") {
+    resultDiv.style.backgroundColor = "yellow";
+  }
+  else if (color === "green") {
+    resultDiv.style.backgroundColor = "green";
+  }
+}
+</script>
+
+</body>
+</html>
